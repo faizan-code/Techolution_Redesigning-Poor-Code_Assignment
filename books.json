@@ -1,0 +1,14 @@
+[
+    {
+        "title": "math",
+        "author": "auth_chem",
+        "isbn": "12345678901",
+        "available": true
+    },
+    {
+        "title": "bio",
+        "author": "dr verma",
+        "isbn": "21345678902",
+        "available": true
+    }
+]
