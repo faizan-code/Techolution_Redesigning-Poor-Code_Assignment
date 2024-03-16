@@ -25,7 +25,7 @@ cd library-management-system
 ## `python main.py`
 
 
-
+```
 # library-management-system/
 │
 ├── models/                  # Contains classes that represent data models.
@@ -58,4 +58,4 @@ cd library-management-system
 │   └── validators.py        # Input validation utility.
 │
 └── main.py                  # Entry point for the application, initializes the CLI.
-
+```
