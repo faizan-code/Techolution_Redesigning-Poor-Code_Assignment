@@ -24,9 +24,9 @@ cd library-management-system
 # Running the Application
 ## `python main.py`
 
+# library-management-system
 
 ```
-# library-management-system/
 │
 ├── models/                  # Contains classes that represent data models.
 │   ├── book.py              # Book class with properties like title and author.
