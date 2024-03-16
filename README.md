@@ -60,3 +60,14 @@ library-management-system/
 │
 └── main.py                  # Application entry point; initializes CLI.
 ```
+
+
+## OOP Concepts Applied
+
+- **Encapsulation**: Used in `models/` to hide the internal state of objects. This is crucial for safeguarding the data integrity and providing a clear interface for object interaction.
+
+- **Inheritance**: `base_service.py` serves as a base class for other services. This approach promotes code reuse and establishes a common interface for all derived service classes.
+
+- **Polymorphism**: Methods in `commands/` implement the same interface but behave differently based on the command. This allows for flexibility in how commands are executed while adhering to a consistent execution pattern.
+
+- **Abstraction**: `storage_interface.py` defines a set of operations that all storage classes must implement. This abstracts away the details of data storage, enabling the rest of the application to interact with storage mechanisms through a unified interface without concerning itself with the specifics.
