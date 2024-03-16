@@ -27,35 +27,36 @@ cd library-management-system
 # library-management-system
 
 ```
+library-management-system/
 │
-├── models/                  # Contains classes that represent data models.
-│   ├── book.py              # Book class with properties like title and author.
-│   └── user.py              # User class with properties like name and user ID.
+├── models/                  # Data models representation.
+│   ├── book.py              # Defines the Book model.
+│   └── user.py              # Defines the User model.
 │
-├── storage/                 # Abstracts storage mechanism (JSON, CSV).
-│   ├── storage_interface.py # Interface for storage operations.
-│   ├── json_storage.py      # Implements storage_interface with JSON.
-│   └── csv_storage.py       # Optional CSV storage implementation.
+├── storage/                 # Data storage abstraction layer.
+│   ├── storage_interface.py # Storage operation definitions.
+│   ├── json_storage.py      # JSON-based storage implementation.
+│   └── csv_storage.py       # Optional CSV-based storage implementation.
 │
-├── services/                # Business logic layer for entity management.
-│   ├── base_service.py      # Base class for shared service functionalities.
-│   ├── book_service.py      # Service class for book management operations.
-│   └── user_service.py      # Service class for user management operations.
+├── services/                # Business logic for library operations.
+│   ├── base_service.py      # Base class for common service functionalities.
+│   ├── book_service.py      # Book-related business operations.
+│   └── user_service.py      # User-related business operations.
 │
-├── commands/                # Implements the Command pattern for CLI interactions.
-│   ├── add_book_command.py
-│   ├── add_user_command.py
-│   ├── command_interface.py # Defines the command interface.
-│   ├── delete_book_command.py
-│   ├── delete_user_command.py
-│   ├── list_books_command.py
-│   ├── list_users_command.py
-│   ├── update_book_command.py
-│   └── update_user_command.py
+├── commands/                # Command pattern implementation for CLI interactions.
+│   ├── add_book_command.py  # Command to add a new book.
+│   ├── add_user_command.py  # Command to add a new user.
+│   ├── command_interface.py # Common interface for all commands.
+│   ├── delete_book_command.py  # Command to delete a book.
+│   ├── delete_user_command.py  # Command to delete a user.
+│   ├── list_books_command.py   # Command to list all books.
+│   ├── list_users_command.py   # Command to list all users.
+│   ├── update_book_command.py  # Command to update book details.
+│   └── update_user_command.py  # Command to update user details.
 │
-├── utils/                   # Utilities and helpers like logging and validation.
-│   ├── logger.py            # Logging utility for tracking system operations.
-│   └── validators.py        # Input validation utility.
+├── utils/                   # Utility functions and helpers.
+│   ├── logger.py            # Simple logging utility for system operations.
+│   └── validators.py        # Input validation functions.
 │
-└── main.py                  # Entry point for the application, initializes the CLI.
+└── main.py                  # Application entry point; initializes CLI.
 ```
